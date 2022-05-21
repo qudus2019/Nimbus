@@ -28,8 +28,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/qudus2019/Nimbus2000](https://your-solution-url.co)
-- Live Site URL: [https://qudus2019.github.io/Nimbus2000/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/qudus2019/Nimbus](https://your-solution-url.co)
+- Live Site URL: [https://qudus2019.github.io/Nimbus/](https://your-live-site-url.com)
 
 ## My process
 I started by writing the HTML code before styling with CSS. Designed for desktop first before adding the media query for mobile.
