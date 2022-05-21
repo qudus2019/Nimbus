@@ -1,17 +1,14 @@
 /* for desktop 1440px*/
-.background{
-    max-width:85vw ;
+body{
     position: relative;
     top: 75px;
     margin: auto ;
-    height: 70vh;
     background-color:hsl(212,45%,89%);
-    box-shadow: 5px 10px 15px  rgb(238, 235, 235);
 }
 
 .qrbox{
-    max-width:19% ;
-    height: 74%;
+    max-width:22% ;
+    height: 77%;
     background-color:white ;
     border-radius: 10px;
     margin: auto;
