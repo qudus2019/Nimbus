@@ -25,6 +25,7 @@ img{
     height:62%;
     margin:5px 5px 1px 9px;
     border-radius:10px ;
+    font-family: 'Outfit', sans-serif;
 }
 
 .p1{
@@ -32,6 +33,7 @@ img{
     text-align: center;
     font-weight: 700;
     margin-top:5px ;
+    font-family: 'Outfit', sans-serif;
     color: hsl(218, 44%,22%);
 }
 
