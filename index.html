@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta name="Description" content="QRCode,Frontend mentor">
-    <link rel="stylesheet" href="style.css" type="text/css">
-     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="Images/favicon.png" type="images/x-icon">
-    <title>QR Components</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <main>
-    <div class="background">
-       <div class="qrbox">
-           <img src="Images/qrcode.png" alt="qr">
-           <h1 class="p1">Improve your front-end <br>skills by building projects</h1>
-           <p class="ptwo">Scan the QR code to visit Frontend <br>Mentor
-                and take your coding to<br> the next level</p>
-       </div>
+    <form action="">
+      <label for="name">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg>
+        <input type="email" id="name" name="name" placeholder="Enter your Email">
+        <img src="img/circle-xmark-solid.svg" alt="check" class="check"> <br>
+        
+      </label>
+      <ul>
+          <li>only letters,numbers are allowed including '.' and '-'</li>
+          <li>Only gmail, hotmail and yahoomail are allowed.</li>
+        </ul>
+    </form>
+    <script>
+        var input = document.querySelector('input');
+        var regex = /^([\w\.-]+)@(gmail|hotmail|yahoomail)\.com$/;
+        var ul = document.querySelector('ul');
+        var li = document.querySelectorAll('li');
 
-    </div></main>
+      function validate(field,regex){
+          var parent = field.parentElement;
+          var img = parent.querySelector('.check');
 
+        if(regex.test(field.value)){
+            parent.style.borderColor = 'green';
+            ul.style.color = 'green';
+            ul.style.opacity = 0;
+            img.style.opacity = 1;
+            img.setAttribute('src','img/checked.png');
+
+        }else{
+            parent.style.borderColor = 'red';
+            img.style.opacity = 1;
+            ul.style.color = 'red';
+            ul.style.opacity = 1;
+            img.setAttribute('src','img/circle-xmark-solid.svg');
+        };
+
+  
+      };
+
+      input.addEventListener('keyup',function(e){
+        
+        validate(input,regex);
+      })
+
+
+    </script>
 </body>
 </html>

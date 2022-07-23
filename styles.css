@@ -1,0 +1,48 @@
+label svg{
+    width:25px;
+    margin-right: 5px;
+    margin-left: 5px;
+} 
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    height:40px;
+    border: 5px solid rgb(19, 19, 34);
+    transform: scale(1.7);
+    margin-left: 120px;
+}
+
+body{
+    font-family: helvetica;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label input{
+    border:none;
+    height:90%;
+    width:70%;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+
+img.check{
+    width:18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0;
+    
+}
+ul{
+    font-size: 1.5em;
+    opacity: 0;
+
+}
